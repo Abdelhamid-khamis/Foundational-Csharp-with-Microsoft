@@ -19,3 +19,10 @@ e:\Products\Codes\Web-Data-Learning-Resources\Courses\CS.csproj\HiGawda\obj\Debu
 e:\Products\Codes\Web-Data-Learning-Resources\Courses\CS.csproj\HiGawda\obj\Debug\net7.0\HiGawda.dll
 e:\Products\Codes\Web-Data-Learning-Resources\Courses\CS.csproj\HiGawda\obj\Debug\net7.0\refint\HiGawda.dll
 e:\Products\Codes\Web-Data-Learning-Resources\Courses\CS.csproj\HiGawda\obj\Debug\net7.0\HiGawda.pdb
+E:\Products\Codes\Foundational-Csharp-with-Microsoft\HiGawda\obj\Debug\net7.0\HiGawda.GeneratedMSBuildEditorConfig.editorconfig
+E:\Products\Codes\Foundational-Csharp-with-Microsoft\HiGawda\obj\Debug\net7.0\HiGawda.AssemblyInfoInputs.cache
+E:\Products\Codes\Foundational-Csharp-with-Microsoft\HiGawda\obj\Debug\net7.0\HiGawda.AssemblyInfo.cs
+E:\Products\Codes\Foundational-Csharp-with-Microsoft\HiGawda\obj\Debug\net7.0\HiGawda.csproj.CoreCompileInputs.cache
+E:\Products\Codes\Foundational-Csharp-with-Microsoft\HiGawda\obj\Debug\net7.0\HiGawda.dll
+E:\Products\Codes\Foundational-Csharp-with-Microsoft\HiGawda\obj\Debug\net7.0\refint\HiGawda.dll
+E:\Products\Codes\Foundational-Csharp-with-Microsoft\HiGawda\obj\Debug\net7.0\HiGawda.pdb

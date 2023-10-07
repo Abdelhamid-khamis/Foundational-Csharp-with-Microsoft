@@ -69,7 +69,7 @@ internal class Program
         //  This doesn't mean it takes the same memory space.
         // Variable Naming Rules:
         // starts with a character or Underscore but not numbers.
-        // not a reserved keyword e.g. static...but _static/@static is valid but not prefered.
+        // not a reserved keyword e.g. static..but _static/@static is valid but not prefered.
         // Descriptive, self-explainatory Names dateOfBirth not dob.
 
         // You must assign a value before using it, the variable takes a default value of its own type.
@@ -267,7 +267,7 @@ internal class Program
 
 
         // The final code for using, escape special chracters, verbatim strings, escape Unicode characters
-        Console.WriteLine("Generating invoices for customer \"Contoso Corp\" ...\n");
+        Console.WriteLine("Generating invoices for customer \"Contoso Corp\" ..\n");
         Console.WriteLine("Invoice: 1021\t\tComplete!");
         Console.WriteLine("Invoice: 1022\t\tComplete!");
         Console.WriteLine("\nOutput Directory:\t");
@@ -282,7 +282,7 @@ internal class Program
 
 
         /*
-        Generating invoices for customer "Contoso Corp" ...
+        Generating invoices for customer "Contoso Corp" ..
 
         Invoice: 1021            Complete!
         Invoice: 1022            Complete!
@@ -721,7 +721,7 @@ internal class Program
         //     - looping number of times
         for (int counter = 0; counter < 5; counter++)
         {
-            System.Console.WriteLine($"Counting....{counter}");
+            System.Console.WriteLine($"Counting..{counter}");
         }
 
         int[] numbers = { 50, 60, 70, 80, 90, 100, 120 };
@@ -805,6 +805,27 @@ internal class Program
             System.Console.WriteLine($"The ascii code for {digit} is {(int)digit}");
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    }   // End of main method
+
+
+
+static void ForForeachLoops___23()
+{
         // ----------------------------- 23. for/foreach loops Training -------------------------------------
         /*  [For/Foreach Training]
             * Create an application to reverse a dynamic array using 'for'
@@ -864,7 +885,11 @@ internal class Program
         {
             System.Console.WriteLine(number);
         }
+}
 
+
+static void DoWhileLoops___24()
+{
         // ----------------------------- 24. Do/While Loops -------------------------------------
 
         /*
@@ -904,7 +929,11 @@ internal class Program
         {
             System.Console.WriteLine(textInput.ToUpper());
         } while (textInput != exitCondition.ToLower());
+    
+}
 
+static void ControlFlowSwitchStatement___25()
+{
         // ----------------------------- 25. Control flow: [Switch statement] -------------------------------------
 
         /*  [Control flow [3. Switch statement]]    1.if statement  2. Ternary operator
@@ -968,7 +997,11 @@ internal class Program
                 System.Console.WriteLine("Invalid Option");
                 break;
         }
+    
+}
 
+static void Methods___26_27()
+{
         // ----------------------------- 26. Methods[Functions] -------------------------------------
 
         /*
@@ -1065,7 +1098,11 @@ internal class Program
 
             return average; // 2. tell the console what to return after the return keyword
         }
+    
+}
 
+static void Comments___28()
+{
         // ----------------------------- 28. Comments  -------------------------------------
         /*
             - A comment is important for your team collegues, but it's not important for the console.
@@ -1078,12 +1115,12 @@ internal class Program
                 - add /// before the method signature
                 - write the description btn the xml tags
                 - build tab, rebuild command, if intellisense didn't get the documentation yet.
-        */
+        */    
+}
 
-
-
-
-        // ----------------------------- 29. Training(Array Findings)  -------------------------------------
+static void TrainingArrayFindings___29()
+{
+          // ----------------------------- 29. Training(Array Findings)  -------------------------------------
 
         /*  [Training]
             - Ask the user to enter the number of items in an integer array.
@@ -1126,9 +1163,12 @@ internal class Program
 
         System.Console.WriteLine($"The highest number in {numberino} is: {highest}");
         System.Console.WriteLine($"The lowest number in {numberino} is: {lowest}");
-        System.Console.WriteLine($"The Average number in {numberino} is: {calculatedAverage}");
+        System.Console.WriteLine($"The Average number in {numberino} is: {calculatedAverage}");  
+}
 
-        // ----------------------------- 30. Training(Palindrome Words)  -------------------------------------
+static void TrainingPalindromeWords___30()
+{
+            // ----------------------------- 30. Training(Palindrome Words)  -------------------------------------
         /*  [Training]
             - Ask the user to enter any word.
             - Check if the word is palindrome or not?
@@ -1166,8 +1206,11 @@ internal class Program
         }
 
         isPalindrome("Dad");
+}
 
-        // ----------------------------- 31. Value Types & Reference Types  -------------------------------------
+static void ValueReferenceTypes___31()
+{
+// ----------------------------- 31. Value Types & Reference Types  -------------------------------------
 
         /*
             When ur app run, it reserves a space in the memory, and it's called a memory space,
@@ -1218,10 +1261,13 @@ internal class Program
         str += " World"; // Here I took a copy of the str value, then created a new address for
         // the str variable, so there are two strings in the memory of the same data type, and this a source of memory leakage, but thanks to automatic garbage collection they got deleted after a while
 
+}
 
 
 
-        // ----------------------------- 32. Type Casting  -------------------------------------
+static void TypeCasting___32()
+{
+// ----------------------------- 32. Type Casting  -------------------------------------
         /*  [Type Casting]
         - Implicit Casting: You didn't do any efforts or use any method, it depends on the size of both dataTypes, it agrees converting from the small size data type, to the bigger size data type.
             بحول ضمنياً طالما التحويل مسموح بيه
@@ -1255,6 +1301,13 @@ but not the case for float and integer, even if they are  bytes size, but the da
 
         System.Console.WriteLine(i3.ToString()); // .ToString(), this method converts anything{data structures, objects} to string
 
+}
+        
+
+
+
+static void StringFormatting___33() 
+  {
         // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
         /*
         * - Basic Formatting(تهيئة بسيطة): It depends on the indexing system, passing an array of elements after the 1st parameter in the string dot format method
@@ -1267,11 +1320,37 @@ but not the case for float and integer, even if they are  bytes size, but the da
 
 
 
-        string str1 = "Hello {0}, My name is {1} ----- {0} ---- {1}"; // 0 & 1 are placeholders with zero indexing system
-        str1 = string.Format(str1, "Hameed", "Khamis"); // string dot format is one of the most imp string methods
+        string str1 = "Hello {0,15}, My name is {1} ----- {0} ---- {1}"; // 0 & 1 are placeholders with zero indexing system
+                                    // you can control the variable specified space, by adding a 2nd arg, between the square braces
+                                    // It adds spaces from ltr, It's used mainly in defining column widths.
+        str1 = string.Format(str1, "Hameed", "Khamis"); // string dot format is one of the most imp string methods, it takes the string then the array of string template args.
         // all parameters after the 1st parameters, could be considered as an array of elements, with zero indexing system{0, 1}
 
 
+        double salary = 10000;
+        string urBalance = "Your salary is {0:C2}";  // C2: This is a 'C'urrency and add '2' digits after the amount.   
+                                                    // This will add a dollar sign before the number, this happened because of UI Culture & Globalization.
+        string urBalance2 = "Your salary is {0:N5}";  // N5: This is a 'N'umber and add '5' digits after the amount.  
+                                                    // This won't add a dollar sign before the number 
+                                                    // N5 = 0.00000
+        System.Console.WriteLine(string.Format(urBalance, salary));
+        System.Console.WriteLine(string.Format(urBalance2, salary));
+        
+
+  }
+
+
+static void StringSplitJoin___34() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
 
 
 
@@ -1279,25 +1358,391 @@ but not the case for float and integer, even if they are  bytes size, but the da
 
 
 
+  }
+
+static void StringBuilder___35() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
 
 
 
+  }
+static void CompilationProcess___36() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
 
 
 
+  }
+static void ClassesObjects___37() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
 
 
 
+  }
+static void Constructor___38() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
 
 
 
+  }
+static void Properties___39() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
 
 
 
+  }
+static void Namespaces___40() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
 
 
 
-        // ----------------------------- OOP -------------------------------------
+  }
+static void AccessModifiers___41() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
+
+
+
+  }
+static void ConstantReadonlyVariables___42() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
+
+
+
+  }
+static void Namespaces___43() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
+
+
+
+  }
+static void Namespaces___44() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
+
+
+
+  }
+static void Namespaces___45() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
+
+
+
+  }
+static void Namespaces___46() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
+
+
+
+  }
+static void Namespaces___47() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
+
+
+
+  }
+static void StringSplitJoin___48() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
+
+
+
+  }
+static void StringSplitJoin___49() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
+
+
+
+  }
+static void StringSplitJoin___50() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
+
+
+
+  }
+static void StringSplitJoin___51() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
+
+
+
+  }
+static void StringSplitJoin___52() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
+
+
+
+  }
+static void StringSplitJoin___53() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
+
+
+
+  }
+
+static void StringSplitJoin___54() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
+
+
+
+  }
+static void StringSplitJoin___55() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
+
+
+
+  }
+static void StringSplitJoin___56() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
+
+
+
+  }
+static void StringSplitJoin___57() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
+
+
+
+  }
+
+static void StringSplitJoin___58() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
+
+
+
+  }
+
+static void StringSplitJoin___59() 
+
+
+  {
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        /*
+         * 
+         * 
+         * 
+        */
+        // 
+
+
+
+  }
+
+
+static void OOP() 
+  {
+    // ----------------------------- OOP -------------------------------------
         /*
             OOP is a Programming paradigm/style/approach
             منهجية أو طريقة تفكير أو رؤيتك ومنظورك للسيستم اللى بتبنيه هتبقى ازاى
@@ -1333,5 +1778,9 @@ but not the case for float and integer, even if they are  bytes size, but the da
                     انت بتشغل العربية وانت متعرفش دورة البنزين عاملة ازاى، انت بتمشى وخلاص
 
         */
-    }
+  }
+
+
+
+
 }

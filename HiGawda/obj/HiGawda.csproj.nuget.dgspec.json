@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Products\\Codes\\Web-Data-Learning-Resources\\Courses\\CS.csproj\\HiGawda\\HiGawda.csproj": {}
+    "E:\\Products\\Codes\\Foundational-Csharp-with-Microsoft\\HiGawda\\HiGawda.csproj": {}
   },
   "projects": {
-    "E:\\Products\\Codes\\Web-Data-Learning-Resources\\Courses\\CS.csproj\\HiGawda\\HiGawda.csproj": {
+    "E:\\Products\\Codes\\Foundational-Csharp-with-Microsoft\\HiGawda\\HiGawda.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Products\\Codes\\Web-Data-Learning-Resources\\Courses\\CS.csproj\\HiGawda\\HiGawda.csproj",
+        "projectUniqueName": "E:\\Products\\Codes\\Foundational-Csharp-with-Microsoft\\HiGawda\\HiGawda.csproj",
         "projectName": "HiGawda",
-        "projectPath": "E:\\Products\\Codes\\Web-Data-Learning-Resources\\Courses\\CS.csproj\\HiGawda\\HiGawda.csproj",
+        "projectPath": "E:\\Products\\Codes\\Foundational-Csharp-with-Microsoft\\HiGawda\\HiGawda.csproj",
         "packagesPath": "C:\\Users\\Hameed Khamis\\.nuget\\packages\\",
-        "outputPath": "E:\\Products\\Codes\\Web-Data-Learning-Resources\\Courses\\CS.csproj\\HiGawda\\obj\\",
+        "outputPath": "E:\\Products\\Codes\\Foundational-Csharp-with-Microsoft\\HiGawda\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hameed Khamis\\AppData\\Roaming\\NuGet\\NuGet.Config",
