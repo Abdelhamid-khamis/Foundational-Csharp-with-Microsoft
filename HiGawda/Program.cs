@@ -14,6 +14,8 @@
 // Console.WriteLine("Hello, World!");
 
 
+using System.Text;
+
 internal class Program
 {
     static void Main(string[] args)
@@ -1308,7 +1310,7 @@ but not the case for float and integer, even if they are  bytes size, but the da
 
 static void StringFormatting___33() 
   {
-        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        // ----------------------------- 33. String Formatting --------------------------------------
         /*
         * - Basic Formatting(تهيئة بسيطة): It depends on the indexing system, passing an array of elements after the 1st parameter in the string dot format method
         * - Control Spacing
@@ -1344,19 +1346,42 @@ static void StringSplitJoin___34()
 
 
   {
-        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
-        /*
-         * 
-         * 
-         * 
+        // ----------------------------- 34. String Split & Join --------------------------------------
+        /* 
+         * How to split a string into an array?
+            * string.split(seperator:',') -> Splits the 'string' to an 'arrayOfStrings'
+         * How to join an array to a string?
+            * string.join(seperator, arrayOfStrings) -> Joins an 'arrayOfStrings' to a 'string'.
+
         */
         // 
 
+        // Almahdy recalled the dyn array definition steps, which was: 
+        /*
+            1. Asking the user to enter the number of array elements(arraySize).
+            2. Loop number of iterartions equals the arraySize.
+            3. Ask the user to enter the elements of the array one by one.
+        */
+
+    // Create a dyn array, and calculate its average, it's an easier way to do a dyn array.
+    System.Console.WriteLine("Please Enter a list of numbers seperated by commas: ");
+    string input = Console.ReadLine();
+    string[] numbers = input.Split(separator:",");  // outputs: string[] - an arrayOfStrings
+    
+    int sum = 0;
+    foreach (string number in numbers)
+    {
+        sum += int.Parse(number);
+    }
+
+    System.Console.WriteLine("Average = " + sum / numbers.Length);
 
 
 
-
-
+    // Join example
+    string[] words = { "Hello, ", "Passionate", "Coders"};
+    string joinedString = string.Join(' ', words);      // outputs: string - a string 
+    System.Console.WriteLine(joinedString);
 
   }
 
@@ -1364,33 +1389,94 @@ static void StringBuilder___35()
 
 
   {
-        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        // ----------------------------- 35. StringBuilder --------------------------------------
         /*
-         * 
-         * 
-         * 
+         * Said before that strings are reference type and immutable type(its value can't be changed, unless I created a new copy of it.)
+         * When to use strings?
+            * Simple and little concatinations(2/3), small size strings, to avoid value duplications
+        * When to use stringBuilder?
+            * More concationations and bigger size strings
+         * StringBuilders works internally with linkedlists, which means it has small stringBuilders under the hood works together.
         */
-        // 
 
+    string str = "Hello";   // Here Console saved a memory address for this string - 1st string in memory
+    str = "Hello, World";   // saved a new memory address for this string - 2nd string in memory
+    str += ", I Love Coding";   // saved a new memory address for this string - 3rd string in memory
 
+    // Memory looks like a house consists of some number of rooms, You won't give a room for evey guest visits u, because this would cause a problem.
+        // Technically speaking, strings numbers, operations and memory garbage collections are important factors that affect ur program performance.
+    
 
+    
+    StringBuilder stringBuilded = new StringBuilder();  // This could be simplified to new(); - because it knows the data type already
+                                                        // Could initially determine the capacity between braces -> new StringBuilder(4096) ~ 4 kilo bytes
+
+            // String builder is also an array of characters(deals internally like a normal string), and it reserves by default 16 bytes(characters)
+            System.Console.WriteLine($"String Builder Length, {stringBuilded.Length}");         // 0 cuz it's empty now
+            System.Console.WriteLine($"String Builder Capacity, {stringBuilded.Capacity}");     // 16 cuz 16 bytes (16 is the default memory reservation size)
+                                                                                                // It reserves with multiplies of 16, 16-32-...-2billion
+                                                                                                // Don't now care about how stringBuilder capacity extends or increase
+            System.Console.WriteLine($"String Builder Max Capacity, {stringBuilded.MaxCapacity}");  // 2 billion, The maximum size you can reserve in memory.
+
+    stringBuilded.Append("Hello, ");
+    stringBuilded.Append("World.");
+
+    stringBuilded.AppendLine("I Love passionate coders.")    // Appends a copy of the specified string followed by the default line terminato r(\n) to the end of the current StringBuilder object.
   }
+
 static void CompilationProcess___36() 
 
 
   {
-        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
-        /*
-         * 
-         * 
-         * 
+        // ----------------------------- 36. Compilation Process--------------------------------------
+        /*  1. Compilation Process in .Net
+            --------------------------------
+        *   Source Code 
+                --C# Compiler--> 
+        *   [Intermediate Language[IL] - Micorsoft Intermediate Lang[MSIL] - Common Intermediate Lang[CIL] ]    = dll file in the project bin folder
+        *       --Common Language Runtime(CLR) - Just-in-time compilation(JIT) embedded tool/program --> 
+        *    Machine Code
+        *
+        *   the compilation process in C# involves the following steps:
+
+            1- Lexical analysis: The source code is broken down into tokens.
+
+            2- Syntax analysis: The tokens are analyzed to check for any syntax errors.
+
+            3- Semantic analysis: The code is analyzed to check for any semantic errors.
+
+            4- Code generation: The compiler generates an intermediate language code (IL or MSIL).
+
+            5- Optimization: The IL code is optimized to improve performance.
+
+            6- Execution: The IL code is executed by the .NET runtime, which JIT compiles it into machine code specific to the platform it is running on.
         */
         // 
 
+        // Compiled languages are (VB.net, C#, F#, cpp.net, java), which means there is a compiler that converts ur readable/understandable code, to a massive machine code, that machine(CPU) can understand.
 
+        // IDE Calls the compiler to compile the file.
+        // When build solution, bin & obj folders are created by the compiler.
+        // exe file is created because it's a console app/wpf app, and also outputs a dll file.
+
+        // You can get the IL of the source code by typing 'ildasm/text/dll file name' in developer cmd, this is called IL Disassembler
+
+        // DotNet Languages are managed code, except C++ could be managed or unmanaged code.
+            // Managed(Targets the virtual machine not the processors directly) or Unmanaged code(When compiler produces Direct machine code, is usually unmanaged, and usually because even .Net languages could target processor directly)
+        // CLR is a virtual machine that runs and takes the IL from ur program, and with The JITer tool starts to convert the IL into M/C code, according to ur working machine processor(64/32)
+            // You won't face, bad Image format or processor architecture problems.
+        // Any language uses IL(.Net, Java), are a bit slower in the startup beacause of the compilation process to IL to Machine code, but after this all called and converted code parts are ran instantly.
+            // but It's kind of smart that actually CLR & JITer converts/compiles the IL on-demand, which means it only convert methods when they get called.
+
+        // IL manages Memory mgmt, it takes care of memory allocation & deallocation, automatically memory garbage collection, security boundaries[no process overlaps with another process], this in contrast of CPP which there you have to allocate and deallocate memory to avoid memory leakage.
+
+        // MC[M/c Code] are represented using Hexadecimal to make the code readable.
+        // Common means that all .NET languages are converted to IL, whether you write(VB.net, C#, F#) it gets converted to IL Code, that's why it's called common.
+
+        // TODO: Read about CTS(Common type system) and CLS(common lang specs).
 
   }
-static void ClassesObjects___37() 
+static void ClassesObjects___37___________() 
 
 
   {
@@ -1784,3 +1870,4 @@ static void OOP()
 
 
 }
+
