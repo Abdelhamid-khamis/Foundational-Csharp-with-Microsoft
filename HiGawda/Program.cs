@@ -14,6 +14,7 @@
 // Console.WriteLine("Hello, World!");
 
 
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 internal class Program
@@ -1477,35 +1478,60 @@ static void CompilationProcess___36()
 
   }
 static void ClassesObjects___37___________() 
-
-
   {
-        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        // ----------------------------- 37. Classes & Objects --------------------------------------
         /*
-         * 
+         * Classes & Objects are the corner stones of OOP.
          * 
          * 
         */
         // 
 
-
-
-  }
-static void Constructor___38() 
-
-
-  {
-        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
+        // What if we want to store informations[name, phoneNumber, address] of 10 students in a suitable data structure[Container?
+            // one approach is to use arrays, but it would be a multidimensional array, because each dimension would represent a student data.
+            // 2nd appeaoch is naiive, which is to use variables, and call variables, student1Name, Student1phoneNumber. XX
+            // 3rd approach is oop,Your program depends on objects interact with each other.
+                // Since you have data related to a single object[student], so make a class calles 'student', then assign some attributes and actions for it.
+                // Class is a catalog/blueprint for the object, everything is an object, the table is an object of the furniture class.
+                // Class attributes differ from one object to another, but names are the same.
+            
         /*
-         * 
-         * 
-         * 
+            Add a new class from csproj.
+            Make the access modifier public not protected or private.
+        
         */
-        // 
+
+        
+        // Public class Student
+        // {
+        //     public string Name {get; set; }
+        //     public string PhoneNumber {get; set; }
+        //     public string Address {get; set; }
+
+        // }
+
+        
+        // Student ahmed = new Student();
+
+        // Console.Write("Enter Student Name: ");
+        // ahmed.Name = Console.ReadLine();
+        
+        // Console.Write("Enter Student PhoneNumber: ");
+        // ahmed.PhoneNumber = Console.ReadLine();
+        
+        // Console.ReadLine("Enter Student Address: ");
+        // ahmed.Address = Console.ReadLine();
+        
+        // // You can create an array of strings from the class
+        // Student[] students = new Student(10);
+        // students[0] = "ahmed";
 
 
-
+        // Every class inherited some attributes and methods from object class[GetType(), GetHashCode()]
   }
+
+
+
 static void Properties___39() 
 
 
