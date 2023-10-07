@@ -21,6 +21,18 @@ internal class Program
 {
     static void Main(string[] args)
     {
+}   // End of main method
+
+
+
+
+
+
+
+
+
+static void LanguageSyntax___03()
+        {
         // ----------------------------- 03. Language Syntax -------------------------------------
 
         // Syntax is the grammar of the language
@@ -38,8 +50,12 @@ internal class Program
         // yellow: special character which the compiler process it as a sth, e.g. add new line.
 
 
-
-        // ----------------------------- 04. Writing to Console -------------------------------------
+        }
+        
+        
+static void WritingToConsole___04()
+        {
+          // ----------------------------- 04. Writing to Console -------------------------------------
 
         // Console.WriteLine("Hello");   tells the console to write hello.
         // discussed main points regarding Console class ops, such as
@@ -55,112 +71,121 @@ internal class Program
         Console.ForegroundColor = ConsoleColor.Red; // sets the font color to green.
         Console.BackgroundColor = ConsoleColor.Green; // sets the bg color to green.
         Console.Title = "C FUndamentals"; // sets a title to the console bar.
-        // Console.ReadKey(); // obtains the next character or function key pressed by the user.
+        // Console.ReadKey(); // obtains the next character or function key pressed by the user.  
+        }
 
-
-        // ----------------------------- 05. Variables & Data Types -------------------------------------
-
-        //  Variables used to store data, and enable reusing of the value.
-        /*
-          * Variables are temporary values you store in the computer's memory.
-          * Before you can use a variable, you have to declare it.
-          * To declare a variable, you first select a data type for the kind of data you want
-                to store, and then give the variable a name that follows the rules.
-        */
-
-        // Compilers reserve a space for each character, so if I added the same line of code,
-        //  This doesn't mean it takes the same memory space.
-        // Variable Naming Rules:
-        // starts with a character or Underscore but not numbers.
-        // not a reserved keyword e.g. static..but _static/@static is valid but not prefered.
-        // Descriptive, self-explainatory Names dateOfBirth not dob.
-
-        // You must assign a value before using it, the variable takes a default value of its own type.
-        // string value :: null - boolean :: false - integer::0
-        // but Csharp is restrictive to unassigning values to variables, to avoid unexpected behaviour.
-
-        string statementToPrint = "Hello, Passionate Coder."; // declaration & Initialization.
-        Console.WriteLine(statementToPrint);
-
-
-        /*
-        Variable names should use camel case, which is a style of writing that uses 
-            a lower-case letter at the beginning of the first word and an upper-case letter 
-            at the beginning of each subsequent word. 
-                For example, string thisIsCamelCase;.
         
-        */
+static void VariablesandDataTypes___05()
+        {
+            // ----------------------------- 05. Variables & Data Types -------------------------------------
+
+            //  Variables used to store data, and enable reusing of the value.
+            /*
+            * Variables are temporary values you store in the computer's memory.
+            * Before you can use a variable, you have to declare it.
+            * To declare a variable, you first select a data type for the kind of data you want
+                    to store, and then give the variable a name that follows the rules.
+            */
+
+            // Compilers reserve a space for each character, so if I added the same line of code,
+            //  This doesn't mean it takes the same memory space.
+            // Variable Naming Rules:
+            // starts with a character or Underscore but not numbers.
+            // not a reserved keyword e.g. static..but _static/@static is valid but not prefered.
+            // Descriptive, self-explainatory Names dateOfBirth not dob.
+
+            // You must assign a value before using it, the variable takes a default value of its own type.
+            // string value :: null - boolean :: false - integer::0
+            // but Csharp is restrictive to unassigning values to variables, to avoid unexpected behaviour.
+
+            string statementToPrint = "Hello, Passionate Coder."; // declaration & Initialization.
+            Console.WriteLine(statementToPrint);
 
 
-        // Variable name examples
-        char userOption;
-
-        int gameScore;
-
-        decimal particlesPerMillion;
-
-        bool processedCustomer;
-
-        /*
-            there are many data types, but you'll focus on just a few for now:
-
-            string for words, phrases, or any alphanumeric data for presentation, not calculation
-            char for a single alphanumeric character
-            int for a whole number
-            decimal for a number with a fractional component
-            bool for a true/false value
-        */
+            /*
+            Variable names should use camel case, which is a style of writing that uses 
+                a lower-case letter at the beginning of the first word and an upper-case letter 
+                at the beginning of each subsequent word. 
+                    For example, string thisIsCamelCase;.
+            
+            */
 
 
-        /*
-        * You must assign (set) a value to a variable before you can retrieve (get) a value from a variable.
-        * You can initialize a variable by assigning a value to the variable at the point of declaration.
-        * Assignment happens from right to left.
-        * You use a single equals character as the assignment operator.
-        * To retrieve the value from the variable, you merely use the variable's name.
-        */
+            // Variable name examples
+            char userOption;
 
-        /* *[The var keyword ]
-        * The var keyword tells the compiler to infer the data type of the variable based on the value it is initialized to.
-        * You'll likely see the var keyword as you read other people's code; however, you should use the data type when possible.        * You use a single equals character as the assignment operator.
-        */
+            int gameScore;
+
+            decimal particlesPerMillion;
+
+            bool processedCustomer;
+
+            /*
+                there are many data types, but you'll focus on just a few for now:
+
+                string for words, phrases, or any alphanumeric data for presentation, not calculation
+                char for a single alphanumeric character
+                int for a whole number
+                decimal for a number with a fractional component
+                bool for a true/false value
+            */
 
 
-        /* [Challenge: Display literal and variable values]
-            In this challenge, you'll write code that 
-                will combine literal and variable values into a single message.
+            /*
+            * You must assign (set) a value to a variable before you can retrieve (get) a value from a variable.
+            * You can initialize a variable by assigning a value to the variable at the point of declaration.
+            * Assignment happens from right to left.
+            * You use a single equals character as the assignment operator.
+            * To retrieve the value from the variable, you merely use the variable's name.
+            */
 
-            Store the following values in variables:
-                Bob
-                3
-                34.4
+            /* *[The var keyword ]
+            * The var keyword tells the compiler to infer the data type of the variable based on the value it is initialized to.
+            * You'll likely see the var keyword as you read other people's code; however, you should use the data type when possible.        * You use a single equals character as the assignment operator.
+            */
 
-            Write code in the .NET Editor to display the following message:
-                Hello, Bob! You have 3 messages in your inbox. The temperature is 34.4 celsius.
+
+            /* [Challenge: Display literal and variable values]
+                In this challenge, you'll write code that 
+                    will combine literal and variable values into a single message.
+
+                Store the following values in variables:
+                    Bob
+                    3
+                    34.4
+
+                Write code in the .NET Editor to display the following message:
+                    Hello, Bob! You have 3 messages in your inbox. The temperature is 34.4 celsius.
+            
+            */
+
+            string firstName = "Bob";
+            int luckNumber = 3;
+            double decimalNumber = 34.4;
+
+            Console.Write($"Hello, {firstName}! You have {luckNumber} messages in your inbox. The temperature is {decimalNumber} celsius.");
+
+
+
+
+            Console.WriteLine(34.40M);  // outputs 34.40
+
+
+            /*
+                [Summary] Store and retrieve data using literal and variable values in C#
+
+                Your goal was to display a formatted message using a combination of literal and variable values.
+                Using basic C# syntax, you created literal values of several different data types. You declared variables, and also set and retrieved values from those variables. You also initialized variables, and learned how to use the var keyword to implicitly type a variable by inferring the type from the initialization.
+            */
+
+        }
+
         
-        */
-
-        string firstName = "Bob";
-        int luckNumber = 3;
-        double decimalNumber = 34.4;
-
-        Console.Write($"Hello, {firstName}! You have {luckNumber} messages in your inbox. The temperature is {decimalNumber} celsius.");
 
 
 
-
-        Console.WriteLine(34.40M);  // outputs 34.40
-
-
-        /*
-            [Summary] Store and retrieve data using literal and variable values in C#
-
-            Your goal was to display a formatted message using a combination of literal and variable values.
-            Using basic C# syntax, you created literal values of several different data types. You declared variables, and also set and retrieved values from those variables. You also initialized variables, and learned how to use the var keyword to implicitly type a variable by inferring the type from the initialization.
-        */
-
-
-
+static void BooleanDataType___06()
+        {
         // ----------------------------- 06. Boolean DataType -------------------------------------
 
         // It's the lowest size in memory, contains two values true or false.
@@ -183,7 +208,10 @@ internal class Program
         bool result5 = !boolean1; // NOT operation
 
         bool result6 = boolean1 ^ boolean2; // XOR, caret operator, returns true if 2 vars are different(one is true & the other is false)
+        }
 
+static void CharDataType___07()
+        {
         // ----------------------------- 07. Char Data Type -------------------------------------
 
         Console.ReadLine(); // The star means it's used more frequent
@@ -202,7 +230,10 @@ internal class Program
         // Create a console app that prints the ascii table for small & capital a-z letters
         // and for numbers from 0-9
 
+        }
 
+static void StringDataTypes___08__09()
+        {
         // ----------------------------- 08. & 09. String Data Type -------------------------------------
         // = Escape Special characters - Unicode escape characters  - Verbatim strings 
             // String Concatenation- String Templates=
@@ -374,29 +405,29 @@ internal class Program
 
 
 
-    /* [Summary] https://learn.microsoft.com/en-us/training/modules/csharp-basic-formatting/8-summary
+        /* [Summary] https://learn.microsoft.com/en-us/training/modules/csharp-basic-formatting/8-summary
 
-    Your goal was to write code that formats strings with special characters, such as double quotes,
-    new lines, tabs, and other white space, as well as unicode characters. 
-    You also combined strings using two different techniques.
+        Your goal was to write code that formats strings with special characters, such as double quotes,
+        new lines, tabs, and other white space, as well as unicode characters. 
+        You also combined strings using two different techniques.
 
-    Using character escape sequences, you added special characters in your literal strings by 
-        either using special escaping sequences or using verbatim strings. 
-        You added Unicode characters from other language sets like Japanese Kanji 
-        and Russian Cyrillic in your literal strings. You used simple string concatenation 
-        with the + symbol, and upgraded to string interpolation for combining values into 
-        a string template.
+        Using character escape sequences, you added special characters in your literal strings by 
+            either using special escaping sequences or using verbatim strings. 
+            You added Unicode characters from other language sets like Japanese Kanji 
+            and Russian Cyrillic in your literal strings. You used simple string concatenation 
+            with the + symbol, and upgraded to string interpolation for combining values into 
+            a string template.
 
-    Without the ability to format your output, you would be severely restricted in what kinds of 
-        information you could present to the user. However, now you can provide your users 
-        with sophisticated instructions and feedback with a wide variety of formatting, 
-        symbols, and languages.
-
-
+        Without the ability to format your output, you would be severely restricted in what kinds of 
+            information you could present to the user. However, now you can provide your users 
+            with sophisticated instructions and feedback with a wide variety of formatting, 
+            symbols, and languages.
 
 
 
-    */
+
+
+        */
 
 
 
@@ -496,7 +527,10 @@ internal class Program
         System.Console.WriteLine(
             $"Your Full name is: {fullName}, and the new is {fullName.Replace(oldValue, newValue, StringComparison.OrdinalIgnoreCase)}"
         );
+        }
 
+static void NemericDataTypes___10()
+        {
         // ----------------------------- 10. Numeric Data Type -------------------------------------
 
         // It's a strength point that the lang has numerous numeric data types.
@@ -541,6 +575,10 @@ internal class Program
         System.Console.WriteLine($"long Memory Size: {long.MaxValue}"); // 2 billion
         System.Console.WriteLine($"ulong Memory Size: {ulong.MaxValue}"); // 4 billion, double int
 
+        }
+
+static void ArithmeticOperators___11()
+        {
         // ----------------------------- 11. Arithmetic Operators -------------------------------------
 
         /*  [Arithmetic Operators]
@@ -566,7 +604,10 @@ internal class Program
         // ! int/double -> double
         // (Double has a higher range than int, so it returns the data type with the highest range)
         System.Console.WriteLine($"{x} % {y} = {x % y}"); // 25 divided by 10 is 2 & the remainder is 5[result]
+        }
 
+static void OperatorPrecedence___12()
+        {
         // ----------------------------- 12. Operator Precedence -------------------------------------
         /*
             PEDMAS[ltr] - Please Excuse My Dear Aunt Sam.
@@ -574,7 +615,10 @@ internal class Program
                 Paranthesis forces the operation to be the highest precedence.
         */
         Console.WriteLine($"5 + 3 * 2 = {5 + 3 * 2}");
+        }
 
+static void AssignmentOperators___13()
+        {
         // ----------------------------- 13. Assignment Operators -------------------------------------
 
         int q = 10;
@@ -588,7 +632,10 @@ internal class Program
         int r;
         int t;
         e = r = t = 8; // Multiple assignment(Must be of the same data tpe)
+        }
 
+static void IncrementandDecrementOperators___14()
+        {
         // ----------------------------- 14. Increment & Decrement Operators -------------------------------------
         /*
             pre-increment[++var] & post-increment[var++] {decrement also}
@@ -602,7 +649,10 @@ internal class Program
         Console.WriteLine(5 * ++prefix); // pre is to be executed 1st, but not the case for post.
         //PE'pre'DMAS
 
+        }
 
+static void ComparisonOperators___15()
+        {
         // ----------------------------- 15. Comparison Operators -------------------------------------
         /** [Comparison Operators] -> bool O/P
             ** is Equal (==)
@@ -614,7 +664,10 @@ internal class Program
         */
 
         System.Console.WriteLine($"x==5? {x == 5}");
+        }
 
+static void ParseStrings___16()
+        {
         // ----------------------------- 16. Parse strings(Casting to strings) -------------------------------------
         // Parse mean analysis which means converting from specific DT to a different dt.
         // Calculate the age of a user from two specific dates
@@ -630,7 +683,10 @@ internal class Program
         string p = "1243" * 10; // This produces an error, cuz no other operations are allowed rather than +
         // Operator '*' cannot be applied to operands of type 'string' and 'int'
 
-
+        }
+    
+static void ControlFlow___17()
+        {
         // ----------------------------- 17. Control flow -------------------------------------
 
         // Like the train lane operator, who changes the route of the trains on different lanes, according to specific criterion(condition)
@@ -664,7 +720,11 @@ internal class Program
             System.Console.WriteLine($"Please enter a valid value.");
         }
 
-        // ----------------------------- 18. Debugger -------------------------------------
+        }
+
+static void Debugger___18()
+        {
+         // ----------------------------- 18. Debugger -------------------------------------
         /*
             Debugger tools allows you to trace the problems, and hopefully solving it
             This is done by step by step execution of the code, using breakpoints
@@ -673,7 +733,10 @@ internal class Program
 
 
 
+        }
 
+static void Array___19()
+        {
         // ----------------------------- 19. Arrays -------------------------------------
         /*  [Arrays]
             - Array is a collection of homogenous elements[of the same data type]
@@ -705,7 +768,10 @@ internal class Program
         // length for it, so that it can hold the copied 7 elements from the sourceArray
 
 
+        }
 
+static void ForLoop___20()
+        {
         // ----------------------------- 20. for loop -------------------------------------
         /*  [Loops: for loop]
             - Loop is repeating sth(statement-condition..) for a determined/undetermined number of times
@@ -755,7 +821,10 @@ internal class Program
         */
 
 
+        }
 
+static void ControlflowandTernaryOperators___21()
+        {
 
         // ----------------------------- 21. Control flow & Ternary Operators -------------------------------------
         /*  [المعامل الثلاثى]
@@ -788,6 +857,11 @@ internal class Program
             System.Console.WriteLine(ternaryStatement);
         }
 
+        }
+
+    
+static void forEachLoop___22()
+        {
         // ----------------------------- 22. foreach loop -------------------------------------
         /*
         - It's an optimized way of the normal "for loop", which deals better with arrays or collections.
@@ -807,7 +881,7 @@ internal class Program
         {
             System.Console.WriteLine($"The ascii code for {digit} is {(int)digit}");
         }
-
+        }
 
 
 
@@ -823,7 +897,7 @@ internal class Program
 
 
         
-    }   // End of main method
+    
 
 
 
@@ -1266,8 +1340,6 @@ static void ValueReferenceTypes___31()
 
 }
 
-
-
 static void TypeCasting___32()
 {
 // ----------------------------- 32. Type Casting  -------------------------------------
@@ -1306,9 +1378,6 @@ but not the case for float and integer, even if they are  bytes size, but the da
 
 }
         
-
-
-
 static void StringFormatting___33() 
   {
         // ----------------------------- 33. String Formatting --------------------------------------
@@ -1477,7 +1546,7 @@ static void CompilationProcess___36()
         // TODO: Read about CTS(Common type system) and CLS(common lang specs).
 
   }
-static void ClassesObjects___37___________() 
+static void ClassesObjects___37() 
   {
         // ----------------------------- 37. Classes & Objects --------------------------------------
         /*
@@ -1501,7 +1570,7 @@ static void ClassesObjects___37___________()
         
         */
 
-        
+
         // Public class Student
         // {
         //     public string Name {get; set; }
@@ -1530,7 +1599,21 @@ static void ClassesObjects___37___________()
         // Every class inherited some attributes and methods from object class[GetType(), GetHashCode()]
   }
 
+static void Constructor___38_______() 
 
+
+  {
+        // ----------------------------- 38. Constructor --------------------------------------
+        /*
+         * Constructor is a special type of method, 
+         * 
+         * 
+        */
+        // 
+
+
+
+  }
 
 static void Properties___39() 
 
