@@ -1,0 +1,21 @@
+d:\Design Aids\Codes\CS.csproj\HiGawda\bin\Debug\net7.0\HiGawda.exe
+d:\Design Aids\Codes\CS.csproj\HiGawda\bin\Debug\net7.0\HiGawda.deps.json
+d:\Design Aids\Codes\CS.csproj\HiGawda\bin\Debug\net7.0\HiGawda.runtimeconfig.json
+d:\Design Aids\Codes\CS.csproj\HiGawda\bin\Debug\net7.0\HiGawda.dll
+d:\Design Aids\Codes\CS.csproj\HiGawda\bin\Debug\net7.0\HiGawda.pdb
+d:\Design Aids\Codes\CS.csproj\HiGawda\obj\Debug\net7.0\HiGawda.GeneratedMSBuildEditorConfig.editorconfig
+d:\Design Aids\Codes\CS.csproj\HiGawda\obj\Debug\net7.0\HiGawda.AssemblyInfoInputs.cache
+d:\Design Aids\Codes\CS.csproj\HiGawda\obj\Debug\net7.0\HiGawda.AssemblyInfo.cs
+d:\Design Aids\Codes\CS.csproj\HiGawda\obj\Debug\net7.0\HiGawda.csproj.CoreCompileInputs.cache
+d:\Design Aids\Codes\CS.csproj\HiGawda\obj\Debug\net7.0\HiGawda.dll
+d:\Design Aids\Codes\CS.csproj\HiGawda\obj\Debug\net7.0\refint\HiGawda.dll
+d:\Design Aids\Codes\CS.csproj\HiGawda\obj\Debug\net7.0\HiGawda.pdb
+d:\Design Aids\Codes\CS.csproj\HiGawda\obj\Debug\net7.0\HiGawda.genruntimeconfig.cache
+d:\Design Aids\Codes\CS.csproj\HiGawda\obj\Debug\net7.0\ref\HiGawda.dll
+e:\Products\Codes\Web-Data-Learning-Resources\Courses\CS.csproj\HiGawda\obj\Debug\net7.0\HiGawda.GeneratedMSBuildEditorConfig.editorconfig
+e:\Products\Codes\Web-Data-Learning-Resources\Courses\CS.csproj\HiGawda\obj\Debug\net7.0\HiGawda.AssemblyInfoInputs.cache
+e:\Products\Codes\Web-Data-Learning-Resources\Courses\CS.csproj\HiGawda\obj\Debug\net7.0\HiGawda.AssemblyInfo.cs
+e:\Products\Codes\Web-Data-Learning-Resources\Courses\CS.csproj\HiGawda\obj\Debug\net7.0\HiGawda.csproj.CoreCompileInputs.cache
+e:\Products\Codes\Web-Data-Learning-Resources\Courses\CS.csproj\HiGawda\obj\Debug\net7.0\HiGawda.dll
+e:\Products\Codes\Web-Data-Learning-Resources\Courses\CS.csproj\HiGawda\obj\Debug\net7.0\refint\HiGawda.dll
+e:\Products\Codes\Web-Data-Learning-Resources\Courses\CS.csproj\HiGawda\obj\Debug\net7.0\HiGawda.pdb
