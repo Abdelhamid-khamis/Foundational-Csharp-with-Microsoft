@@ -1255,7 +1255,7 @@ but not the case for float and integer, even if they are  bytes size, but the da
 
         System.Console.WriteLine(i3.ToString()); // .ToString(), this method converts anything{data structures, objects} to string
 
-        // ----------------------------- 33. String Formatting at 7:00 min -------------------------------------
+        // ----------------------------- 33. String Formatting at 7:00 min --------------------------------------
         /*
         * - Basic Formatting(تهيئة بسيطة): It depends on the indexing system, passing an array of elements after the 1st parameter in the string dot format method
         * - Control Spacing
@@ -1263,6 +1263,7 @@ but not the case for float and integer, even if they are  bytes size, but the da
 
         . There is an imp link in this video description
         */
+        // Commits: Completed Tutorial 33. String Formatting
 
 
 
